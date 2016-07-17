@@ -20,6 +20,9 @@
   <section>
     {{ .Content }}
   </section>
+
+   {{ partial "share.html" . }}
+   
   <footer>
     {{ with .Site.Params.disqus }}
     <hr/>

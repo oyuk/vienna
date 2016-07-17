@@ -287,3 +287,16 @@ article section img {
     margin: 13px auto;
 }
 
+#share-buttons {
+  overflow: auto;
+}
+
+#share-buttons ul {
+  padding: 0;
+}
+
+#share-buttons li {
+  float: left;
+  list-style: none;
+  margin-right: 10px;
+}
