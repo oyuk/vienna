@@ -1,0 +1,9 @@
+{{if .Site.Taxonomies.tags }}
+  <ul>
+    {{ range .Site.Taxonomies.tags }}
+    <li>
+      <a href="/tags/{{ . | urlize }}"><span></span>{{ . }}</a>
+    </li>
+    {{ end }}
+  </ul>
+{{ end }}
