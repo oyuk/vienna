@@ -1,9 +1,12 @@
   </main>
   <footer class="container global-footer">
-    <div class="copyright-note pull-left">
-      {{ .Site.Copyright | safeHTML }}
+    {{ partial "tags.html" . }}
+    <div style="margin: 20px 0 0 0;">
+      <div class="copyright-note pull-left">
+        {{ .Site.Copyright | safeHTML }}
+      </div>
+      {{ partial "link.html" . }}
     </div>
-    {{ partial "link.html" . }}
   </footer>
 
   <script src="{{ .Site.BaseURL }}js/highlight.pack.js"></script>

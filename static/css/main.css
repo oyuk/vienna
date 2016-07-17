@@ -300,3 +300,7 @@ article section img {
   list-style: none;
   margin-right: 10px;
 }
+
+#Tags {
+  margin: 5px 0;
+}
