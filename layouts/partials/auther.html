@@ -9,7 +9,10 @@
         {{ with .Site.Params.author }}
         <h1 class="author-name text-primary">{{ . }}</h1>
         {{ end }}
-        {{ with .Site.Params.bio }}
+        {{ with .Site.Params.bioShort }}
+        <div class="author-bio">{{ . }}</div>
+        {{ end }}
+        {{ with .Site.Params.bioContent }}
         <div class="author-bio">{{ . }}</div>
         {{ end }}
       </div>
